@@ -1,0 +1,37 @@
+[
+  {
+    "_id": { "$oid": "65f2c3d4e5f6078900000a11" },
+    "name": "Thịt bò Wagyu A5 Miyazaki",
+    "description": "Loại thịt bò đắt đỏ nhất thế giới với các vân mỡ cẩm thạch hoàn hảo, tan chảy ngay khi chạm vào đầu lưỡi.",
+    "origin": "Japan",
+    "image": "assets/images/ingredients/wagyu_a5.jpg"
+  },
+  {
+    "_id": { "$oid": "65f2c3d4e5f6078900000b22" },
+    "name": "Nấm Truffle đen Perigord",
+    "description": "Được mệnh danh là 'kim cương đen' của nền ẩm thực, mang hương thơm đặc trưng nồng nàn không thể thay thế.",
+    "origin": "France",
+    "image": "assets/images/ingredients/black_truffle.jpg"
+  },
+  {
+    "_id": { "$oid": "65f2c3d4e5f6078900000c33" },
+    "name": "Tôm hùm xanh Brittany",
+    "description": "Loại hải sản quý hiếm với phần thịt chắc, ngọt đậm đà, được đánh bắt thủ công tại vùng biển phía Tây nước Pháp.",
+    "origin": "France",
+    "image": "assets/images/ingredients/blue_lobster.jpg"
+  },
+  {
+    "_id": { "$oid": "65f2c3d4e5f6078900000d44" },
+    "name": "Trứng cá tầm Beluga",
+    "description": "Những viên trứng cá đen bóng bẩy, mang hương vị của biển cả và độ béo ngậy tinh tế, biểu tượng của sự sang trọng.",
+    "origin": "Caspian Sea",
+    "image": "assets/images/ingredients/caviar_beluga.jpg"
+  },
+  {
+    "_id": { "$oid": "65f2c3d4e5f6078900000e55" },
+    "name": "Sốt rượu vang Bordeaux 1982",
+    "description": "Sốt cô đặc được chế biến từ dòng vang đỏ thượng hạng, trải qua 48 giờ ninh cùng xương ống và thảo mộc.",
+    "origin": "France",
+    "image": "assets/images/ingredients/bordeaux_sauce.jpg"
+  }
+]

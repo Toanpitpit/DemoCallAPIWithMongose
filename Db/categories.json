@@ -1,0 +1,37 @@
+[
+  {
+    "_id": { "$oid": "65f2a1b2c3d4e5f607890001" },
+    "name": "Khai vị tinh hoa",
+    "description": "Tập hợp những món ăn nhẹ được chế biến từ hải sản tươi sống và rau củ hữu cơ, thiết kế để đánh thức vị giác một cách nhẹ nhàng trước khi bước vào bữa tiệc chính.",
+    "image": "assets/images/categories/appetizers_premium.jpg",
+    "createdAt": { "$date": "2024-03-15T08:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "65f2a1b2c3d4e5f607890002" },
+    "name": "Món chính thượng hạng",
+    "description": "Những kiệt tác ẩm thực được kết hợp giữa kỹ thuật nấu nướng hiện đại và nguồn nguyên liệu quý hiếm, mang đến hương vị đậm đà và sự thỏa mãn tuyệt đối cho thực khách.",
+    "image": "assets/images/categories/main_courses_luxury.jpg",
+    "createdAt": { "$date": "2024-03-15T08:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "65f2a1b2c3d4e5f607890003" },
+    "name": "Tráng miệng nghệ thuật",
+    "description": "Sự giao thoa giữa vị ngọt thanh tao và nghệ thuật tạo hình thủ công, sử dụng chocolate nguyên chất và trái cây nhiệt đới tươi mới theo mùa.",
+    "image": "assets/images/categories/desserts_art.jpg",
+    "createdAt": { "$date": "2024-03-15T08:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "65f2a1b2c3d4e5f607890004" },
+    "name": "Hầm rượu quý hiếm",
+    "description": "Bộ sưu tập những dòng vang danh tiếng từ các vùng đất lâu đời trên thế giới, được bảo quản trong điều kiện tiêu chuẩn để giữ trọn vẹn hương vị nồng nàn.",
+    "image": "assets/images/categories/wine_cellar.jpg",
+    "createdAt": { "$date": "2024-03-15T08:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "65f2a1b2c3d4e5f607890005" },
+    "name": "Thực đơn thử nếm (Tasting)",
+    "description": "Hành trình ẩm thực độc bản gồm nhiều món nhỏ được đầu bếp trưởng thiết kế riêng, thay đổi theo từng tháng để phản ánh sự biến chuyển của nguyên liệu thiên nhiên.",
+    "image": "assets/images/categories/tasting_menu.jpg",
+    "createdAt": { "$date": "2024-03-15T08:00:00Z" }
+  }
+]

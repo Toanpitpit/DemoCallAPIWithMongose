@@ -1,0 +1,42 @@
+[
+  {
+    "_id": { "$oid": "65f2b2c3d4e5f607890001a1" },
+    "fullname": "Nguyễn Hoàng Nam",
+    "rank": "Executive Chef",
+    "description": "Với hơn 20 năm kinh nghiệm tại các nhà hàng 3 sao Michelin toàn cầu, ông Nam nổi tiếng với khả năng kết hợp gia vị Việt Nam vào kỹ thuật chế biến món Pháp hiện đại.",
+    "image": "assets/images/chefs/nam_chef.jpg",
+    "nationality": "Vietnam"
+  },
+  {
+    "_id": { "$oid": "65f2b2c3d4e5f607890002b2" },
+    "fullname": "Elena Rodriguez",
+    "rank": "Sous Chef",
+    "description": "Chuyên gia về các món hải sản Địa Trung Hải với tư duy sáng tạo trong việc trình bày món ăn như một tác phẩm hội họa đương đại.",
+    "image": "assets/images/chefs/elena_chef.jpg",
+    "nationality": "Spain"
+  },
+  {
+    "_id": { "$oid": "65f2b2c3d4e5f607890003c3" },
+    "fullname": "Jean-Pierre",
+    "rank": "Pastry Chef",
+    "description": "Bậc thầy về bánh ngọt thủ công, người từng giữ vị trí bếp trưởng bánh tại các khách sạn danh tiếng nhất Paris, chuyên về kỹ thuật xử lý chocolate và đường nghệ thuật.",
+    "image": "assets/images/chefs/jean_pierre_chef.jpg",
+    "nationality": "France"
+  },
+  {
+    "_id": { "$oid": "65f2b2c3d4e5f607890004d4" },
+    "fullname": "Akira Tanaka",
+    "rank": "Sushi Master",
+    "description": "Sở hữu kỹ năng dao điêu luyện và sự hiểu biết sâu sắc về các loại cá theo mùa, mang đến trải nghiệm Omakase tinh tế và thuần khiết nhất.",
+    "image": "assets/images/chefs/akira_chef.jpg",
+    "nationality": "Japan"
+  },
+  {
+    "_id": { "$oid": "65f2b2c3d4e5f607890005e5" },
+    "fullname": "David Smith",
+    "rank": "Sommelier",
+    "description": "Chuyên gia nếm rượu với kiến thức uyên thâm về lịch sử các vùng nho, giúp thực khách chọn lựa loại vang hoàn hảo nhất để nâng tầm hương vị món ăn.",
+    "image": "assets/images/chefs/david_sommelier.jpg",
+    "nationality": "UK"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "_id": { "$oid": "65f2d4e5f607890000001f11" },
+    "title": "Bít tết Wagyu A5 Sốt Truffle",
+    "price": 3850000,
+    "description": "Thăn ngoại bò Wagyu A5 Miyazaki được nướng trên đá nham thạch, ăn kèm với sốt nấm Truffle đen và khoai tây nghiền mịn. Món ăn là sự bùng nổ của hương vị béo ngậy và mùi thơm quý phái.",
+    "image": "assets/images/dishes/wagyu_steak_main.jpg",
+    "category": { "$oid": "65f2a1b2c3d4e5f607890002" },
+    "chef": { "$oid": "65f2b2c3d4e5f607890001a1" },
+    "ingredients": [
+      { "$oid": "65f2c3d4e5f6078900000a11" },
+      { "$oid": "65f2c3d4e5f6078900000b22" }
+    ],
+    "is_signature": true,
+    "rating": 5.0
+  },
+  {
+    "_id": { "$oid": "65f2d4e5f607890000001f22" },
+    "title": "Tôm Hùm Brittany Áp Chảo",
+    "price": 2450000,
+    "description": "Tôm hùm xanh được áp chảo với bơ lạt, dùng kèm măng tây Đà Lạt và bọt biển vị chanh vàng, mang lại cảm giác tươi mát và sang trọng từ đại dương.",
+    "image": "assets/images/dishes/blue_lobster_dish.jpg",
+    "category": { "$oid": "65f2a1b2c3d4e5f607890002" },
+    "chef": { "$oid": "65f2b2c3d4e5f607890002b2" },
+    "ingredients": [{ "$oid": "65f2c3d4e5f6078900000c33" }],
+    "is_signature": false,
+    "rating": 4.8
+  },
+  {
+    "_id": { "$oid": "65f2d4e5f607890000001f33" },
+    "title": "Khai Vị Trứng Cá Tầm & Vàng Lá",
+    "price": 1200000,
+    "description": "Bánh blini nhỏ xinh phủ kem chua, trứng cá tầm Beluga và một lớp vảy vàng 24k mỏng manh, tạo nên khởi đầu xa hoa cho bữa tiệc của bạn.",
+    "image": "assets/images/dishes/caviar_appetizer.jpg",
+    "category": { "$oid": "65f2a1b2c3d4e5f607890001" },
+    "chef": { "$oid": "65f2b2c3d4e5f607890004d4" },
+    "ingredients": [{ "$oid": "65f2c3d4e5f6078900000d44" }],
+    "is_signature": true,
+    "rating": 4.9
+  },
+  {
+    "_id": { "$oid": "65f2d4e5f607890000001f44" },
+    "title": "Bò Hầm Vang Bordeaux Cổ Điển",
+    "price": 1850000,
+    "description": "Thịt bò được hầm chậm trong 12 giờ với rượu Bordeaux 1982, hành tím và cà rốt baby, tạo nên cấu trúc thịt mềm như nhung và nước sốt sánh mịn đậm đà.",
+    "image": "assets/images/dishes/bordeaux_beef.jpg",
+    "category": { "$oid": "65f2a1b2c3d4e5f607890002" },
+    "chef": { "$oid": "65f2b2c3d4e5f607890001a1" },
+    "ingredients": [{ "$oid": "65f2c3d4e5f6078900000e55" }],
+    "is_signature": false,
+    "rating": 4.7
+  },
+  {
+    "_id": { "$oid": "65f2d4e5f607890000001f55" },
+    "title": "Mousse Chocolate & Rượu Vang Đỏ",
+    "price": 650000,
+    "description": "Một sự kết hợp táo bạo giữa chocolate đắng 70% và thạch rượu vang đỏ, trang trí với trái mọng tươi và sốt dâu rừng chua nhẹ.",
+    "image": "assets/images/dishes/chocolate_wine_mousse.jpg",
+    "category": { "$oid": "65f2a1b2c3d4e5f607890003" },
+    "chef": { "$oid": "65f2b2c3d4e5f607890003c3" },
+    "ingredients": [{ "$oid": "65f2c3d4e5f6078900000e55" }],
+    "is_signature": false,
+    "rating": 4.6
+  }
+]
