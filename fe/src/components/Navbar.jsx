@@ -22,7 +22,9 @@ export default function Navbar() {
         <Link to="/ingredients">Ingredients</Link>
         {isAdminOrChef && (
           <div className="nav-dropdown">
-            <span className="nav-dropdown-trigger">Admin</span>
+            <span className="nav-dropdown-trigger">
+              {isAdmin ? 'Admin' : 'Dashboard'}
+            </span>
             <div className="nav-dropdown-menu">
               {isAdmin && <Link to="/admin/dishes">Dishes</Link>}
               {isAdmin && <Link to="/admin/categories">Categories</Link>}

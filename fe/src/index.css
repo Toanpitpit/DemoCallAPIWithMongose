@@ -67,6 +67,8 @@ a {
 
 .nav-dropdown {
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-dropdown-trigger {
@@ -82,7 +84,7 @@ a {
 
 .nav-dropdown-menu {
   position: absolute;
-  top: 120%;
+  top: 100%;
   left: 0;
   min-width: 160px;
   background: var(--bg-card);
