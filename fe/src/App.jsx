@@ -8,6 +8,9 @@ import Chefs from './pages/Chefs'
 import Ingredients from './pages/Ingredients'
 import Login from './pages/Login'
 import AdminDishes from './pages/AdminDishes'
+import AdminIngredients from './pages/AdminIngredients'
+import AdminChefs from './pages/AdminChefs'
+import AdminCategories from './pages/AdminCategories'
 
 export default function App() {
   return (
@@ -24,6 +27,30 @@ export default function App() {
           element={
             <ProtectedRoute>
               <AdminDishes />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/categories"
+          element={
+            <ProtectedRoute>
+              <AdminCategories />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/chefs"
+          element={
+            <ProtectedRoute allowChef>
+              <AdminChefs />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/ingredients"
+          element={
+            <ProtectedRoute allowChef>
+              <AdminIngredients />
             </ProtectedRoute>
           }
         />

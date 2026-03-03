@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 export default function Navbar() {
-  const { user, logout, isAdmin } = useAuth();
+  const { user, logout, isAdmin, isAdminOrChef } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -20,7 +20,17 @@ export default function Navbar() {
         <Link to="/categories">Categories</Link>
         <Link to="/chefs">Chefs</Link>
         <Link to="/ingredients">Ingredients</Link>
-        {isAdmin && <Link to="/admin/dishes">Admin</Link>}
+        {isAdminOrChef && (
+          <div className="nav-dropdown">
+            <span className="nav-dropdown-trigger">Admin</span>
+            <div className="nav-dropdown-menu">
+              {isAdmin && <Link to="/admin/dishes">Dishes</Link>}
+              {isAdmin && <Link to="/admin/categories">Categories</Link>}
+              <Link to="/admin/chefs">Chefs</Link>
+              <Link to="/admin/ingredients">Ingredients</Link>
+            </div>
+          </div>
+        )}
       </div>
       <div className="nav-auth">
         {user ? (
