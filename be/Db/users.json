@@ -1,19 +1,19 @@
 [
   {
     "username": "admin",
-    "password": "admin123",
+    "password": "$2b$10$GaiMrOpWuVMASr1mq6OOSuDCskKmekDO5EQhRMk2oKA2jVLEdt9x2",
     "fullname": "Admin User",
     "role": "admin"
   },
   {
     "username": "chef",
-    "password": "chef123",
+    "password": "$2b$10$mNq4Ndu9Ca2lSRr4P6o6n.AKtBhM9bm9CpJOsOWTN/scW1UFjPbQG",
     "fullname": "Chef User",
     "role": "chef"
   },
   {
     "username": "customer",
-    "password": "customer123",
+    "password": "$2b$10$UNLdAg0QssS9UNLgJRWoreeEXlG9Ap6fSznEut/oHfBL2FyFp/ScG",
     "fullname": "Customer User",
     "role": "customer"
   }
