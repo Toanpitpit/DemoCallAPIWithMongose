@@ -53,6 +53,9 @@ a {
 .nav-links {
   display: flex;
   gap: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-links a,
