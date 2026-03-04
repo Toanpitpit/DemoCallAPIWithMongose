@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getDishes } from '../api/dishApi';
 import { getCategories } from '../api/categoryApi';
-import { BASE_URL } from '../api/axiosConfig';
+import { getImageUrl } from '../api/axiosConfig';
 
 export default function Home() {
   const [dishes, setDishes] = useState([]);
@@ -60,7 +60,7 @@ export default function Home() {
           <Link to={`/dishes/${dish._id}`} key={dish._id} className="dish-card">
             <div className="dish-image">
               {dish.image ? (
-                <img src={`${BASE_URL}${dish.image}`} alt={dish.title} />
+                <img src={getImageUrl(dish.image)} alt={dish.title} />
               ) : (
                 <div className="no-image">No Image</div>
               )}

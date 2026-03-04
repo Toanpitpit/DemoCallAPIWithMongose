@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { getCategories, createCategory, updateCategory, deleteCategory } from '../api/categoryApi';
+import { getImageUrl } from '../api/axiosConfig';
 
-const emptyForm = { name: '', description: '' };
+const emptyForm = { name: '', description: '', image: '' };
 
 export default function AdminCategories() {
   const [categories, setCategories] = useState([]);
@@ -28,7 +29,11 @@ export default function AdminCategories() {
   };
 
   const handleEdit = (item) => {
-    setForm({ name: item.name, description: item.description });
+    setForm({
+      name: item.name,
+      description: item.description,
+      image: item.image || '',
+    });
     setEditingId(item._id);
     setShowForm(true);
     setError('');
@@ -100,6 +105,16 @@ export default function AdminCategories() {
             <textarea name="description" value={form.description} onChange={handleChange} required rows="3" />
           </div>
 
+          <div className="form-group">
+            <label>Image path (e.g. assets/images/categories/appetizer.jpg)</label>
+            <input
+              name="image"
+              value={form.image}
+              onChange={handleChange}
+              placeholder="assets/images/categories/..."
+            />
+          </div>
+
           <div className="form-actions">
             <button type="submit" className="btn-primary" disabled={submitting}>
               {submitting ? 'Saving...' : editingId ? 'Update' : 'Create'}
@@ -114,6 +129,7 @@ export default function AdminCategories() {
       <table className="admin-table">
         <thead>
           <tr>
+            <th>Image</th>
             <th>Name</th>
             <th>Description</th>
             <th>Actions</th>
@@ -122,6 +138,17 @@ export default function AdminCategories() {
         <tbody>
           {categories.map((item) => (
             <tr key={item._id}>
+              <td>
+                {item.image ? (
+                  <img
+                    src={getImageUrl(item.image)}
+                    alt={item.name}
+                    className="table-img"
+                  />
+                ) : (
+                  <span className="no-img-small">-</span>
+                )}
+              </td>
               <td>{item.name}</td>
               <td className="desc-cell">{item.description}</td>
               <td className="action-btns">

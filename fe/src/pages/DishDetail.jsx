@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getDishById } from '../api/dishApi';
-import { BASE_URL } from '../api/axiosConfig';
+import { getImageUrl } from '../api/axiosConfig';
 
 export default function DishDetail() {
   const { id } = useParams();
@@ -28,7 +28,7 @@ export default function DishDetail() {
       <div className="dish-detail">
         <div className="dish-detail-image">
           {dish.image ? (
-            <img src={`${BASE_URL}${dish.image}`} alt={dish.title} />
+            <img src={getImageUrl(dish.image)} alt={dish.title} />
           ) : (
             <div className="no-image large">No Image</div>
           )}

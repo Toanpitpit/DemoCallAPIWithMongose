@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { getChefs, createChef, updateChef, deleteChef } from '../api/chefApi';
 import { useAuth } from '../context/AuthContext';
+import { getImageUrl } from '../api/axiosConfig';
 
-const emptyForm = { fullname: '', rank: '', description: '', nationality: '' };
+const emptyForm = { fullname: '', rank: '', description: '', nationality: '', image: '' };
 
 export default function AdminChefs() {
   const [chefs, setChefs] = useState([]);
@@ -35,6 +36,7 @@ export default function AdminChefs() {
       rank: item.rank,
       description: item.description,
       nationality: item.nationality,
+      image: item.image || '',
     });
     setEditingId(item._id);
     setShowForm(true);
@@ -118,6 +120,16 @@ export default function AdminChefs() {
             <input name="nationality" value={form.nationality} onChange={handleChange} required />
           </div>
 
+          <div className="form-group">
+            <label>Image path (e.g. assets/images/chefs/chef_1.jpg)</label>
+            <input
+              name="image"
+              value={form.image}
+              onChange={handleChange}
+              placeholder="assets/images/chefs/..."
+            />
+          </div>
+
           <div className="form-actions">
             <button type="submit" className="btn-primary" disabled={submitting}>
               {submitting ? 'Saving...' : editingId ? 'Update' : 'Create'}
@@ -132,6 +144,7 @@ export default function AdminChefs() {
       <table className="admin-table">
         <thead>
           <tr>
+            <th>Image</th>
             <th>Full Name</th>
             <th>Rank</th>
             <th>Nationality</th>
@@ -142,6 +155,17 @@ export default function AdminChefs() {
         <tbody>
           {chefs.map((item) => (
             <tr key={item._id}>
+              <td>
+                {item.image ? (
+                  <img
+                    src={getImageUrl(item.image)}
+                    alt={item.fullname}
+                    className="table-img"
+                  />
+                ) : (
+                  <span className="no-img-small">-</span>
+                )}
+              </td>
               <td>{item.fullname}</td>
               <td><span className="chef-rank">{item.rank}</span></td>
               <td>{item.nationality}</td>

@@ -27,4 +27,12 @@ api.interceptors.response.use(
 );
 
 export const BASE_URL = 'http://localhost:9999';
+
+/** Build full image URL. Supports both "assets/..." and "/assets/..." paths. */
+export const getImageUrl = (path) => {
+  if (!path) return null;
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  return `${BASE_URL}${normalized}`;
+};
+
 export default api;

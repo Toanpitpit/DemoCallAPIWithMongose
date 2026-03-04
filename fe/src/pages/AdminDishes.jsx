@@ -3,7 +3,7 @@ import { getDishes, createDish, updateDish, deleteDish } from '../api/dishApi';
 import { getCategories } from '../api/categoryApi';
 import { getChefs } from '../api/chefApi';
 import { getIngredients } from '../api/ingredientApi';
-import { BASE_URL } from '../api/axiosConfig';
+import { getImageUrl } from '../api/axiosConfig';
 
 const emptyForm = {
   title: '',
@@ -252,7 +252,7 @@ export default function AdminDishes() {
             <tr key={dish._id}>
               <td>
                 {dish.image ? (
-                  <img src={`${BASE_URL}${dish.image}`} alt={dish.title} className="table-img" />
+                  <img src={getImageUrl(dish.image)} alt={dish.title} className="table-img" />
                 ) : (
                   <span className="no-img-small">-</span>
                 )}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getChefs } from '../api/chefApi';
+import { getImageUrl } from '../api/axiosConfig';
 
 export default function Chefs() {
   const [chefs, setChefs] = useState([]);
@@ -20,6 +21,11 @@ export default function Chefs() {
       <div className="cards-grid">
         {chefs.map((chef) => (
           <div key={chef._id} className="info-card chef-card">
+            {chef.image && (
+              <div className="card-image">
+                <img src={getImageUrl(chef.image)} alt={chef.fullname} />
+              </div>
+            )}
             <h3>{chef.fullname}</h3>
             <span className="chef-rank">{chef.rank}</span>
             <p>{chef.description}</p>
