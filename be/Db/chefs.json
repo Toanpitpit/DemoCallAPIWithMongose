@@ -4,7 +4,7 @@
     "fullname": "Nguyễn Hoàng Nam",
     "rank": "Executive Chef",
     "description": "Với hơn 20 năm kinh nghiệm tại các nhà hàng 3 sao Michelin toàn cầu, ông Nam nổi tiếng với khả năng kết hợp gia vị Việt Nam vào kỹ thuật chế biến món Pháp hiện đại.",
-    "image": "assets/images/chefs/nam_chef.jpg",
+    "image": "assets/images/chefs/chef_1.jpg",
     "nationality": "Vietnam"
   },
   {
@@ -12,7 +12,7 @@
     "fullname": "Elena Rodriguez",
     "rank": "Sous Chef",
     "description": "Chuyên gia về các món hải sản Địa Trung Hải với tư duy sáng tạo trong việc trình bày món ăn như một tác phẩm hội họa đương đại.",
-    "image": "assets/images/chefs/elena_chef.jpg",
+    "image": "assets/images/chefs/chef_2.jpg",
     "nationality": "Spain"
   },
   {
@@ -20,7 +20,7 @@
     "fullname": "Jean-Pierre",
     "rank": "Pastry Chef",
     "description": "Bậc thầy về bánh ngọt thủ công, người từng giữ vị trí bếp trưởng bánh tại các khách sạn danh tiếng nhất Paris, chuyên về kỹ thuật xử lý chocolate và đường nghệ thuật.",
-    "image": "assets/images/chefs/jean_pierre_chef.jpg",
+    "image": "assets/images/chefs/chef_3.jpg",
     "nationality": "France"
   },
   {
@@ -28,7 +28,7 @@
     "fullname": "Akira Tanaka",
     "rank": "Sushi Master",
     "description": "Sở hữu kỹ năng dao điêu luyện và sự hiểu biết sâu sắc về các loại cá theo mùa, mang đến trải nghiệm Omakase tinh tế và thuần khiết nhất.",
-    "image": "assets/images/chefs/akira_chef.jpg",
+    "image": "assets/images/chefs/chef_4.jpg",
     "nationality": "Japan"
   },
   {
@@ -36,7 +36,7 @@
     "fullname": "David Smith",
     "rank": "Sommelier",
     "description": "Chuyên gia nếm rượu với kiến thức uyên thâm về lịch sử các vùng nho, giúp thực khách chọn lựa loại vang hoàn hảo nhất để nâng tầm hương vị món ăn.",
-    "image": "assets/images/chefs/david_sommelier.jpg",
+    "image": "assets/images/chefs/chef_5.jpg",
     "nationality": "UK"
   }
 ]

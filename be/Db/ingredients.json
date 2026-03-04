@@ -4,7 +4,7 @@
     "name": "Thịt bò Wagyu A5 Miyazaki",
     "description": "Loại thịt bò đắt đỏ nhất thế giới với các vân mỡ cẩm thạch hoàn hảo, tan chảy ngay khi chạm vào đầu lưỡi.",
     "origin": "Japan",
-    "image": "assets/images/ingredients/wagyu_a5.jpg"
+    "image": "assets/images/ingredients/wagyu.jpg"
   },
   {
     "_id": { "$oid": "65f2c3d4e5f6078900000b22" },
